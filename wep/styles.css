@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  background-color: #222831;
+  color: #eeeeee;
+  line-height: 1.8;
+}
+
+/* Header */
+.header {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: #00adb5;
+}
+
+hr {
+  opacity: 0.1;
+}
+
+/* Hero */
+.hero {
+  max-width: 1200px;
+  margin: 4rem auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero h2 {
+  color: #00adb5;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.primary {
+  background-color: #00adb5;
+}
+
+.secondary {
+  background-color: #393e46;
+}
+
+/* About */
+.about {
+  max-width: 1200px;
+  margin: 5rem auto;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Projects */
+.projects {
+  max-width: 1200px;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.projectBox img {
+  width: 220px;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+.projectBox img:hover {
+  transform: scale(1.1);
+}
+
+/* Contact */
+.contact {
+  max-width: 1200px;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.contactItems {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactItem a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero,
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
